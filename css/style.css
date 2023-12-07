@@ -66,3 +66,33 @@ table {
     --mixed-500: #76737e;
     --mixed-600: #908d96;
 }
+
+/* Global */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-100);
+}
+
+body {
+    background-color: var(--dark-100);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-500);
+}
+
+.box_title {
+    background-color: var(--dark-200);
+    padding: 1rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
