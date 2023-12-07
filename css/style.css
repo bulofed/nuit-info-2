@@ -70,7 +70,7 @@ body {
     font-size: 16px;
 }
 
-header {
+header, footer {
     background-color: var(--primary-100);
     padding: 1rem;
     display: flex;
@@ -102,13 +102,19 @@ h3 {
     font-size: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+    color: var(--dark-100);
+}
+
 .hcenter {
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    gap: 1rem;
 }
 
 .SVPad {
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .main-title {
@@ -148,11 +154,12 @@ h3 {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
     padding-bottom: 1rem;
 }
 
 .box-action {
     background-color: var(--primary-200);
-    width: 300px;
+    width: 600px;
     aspect-ratio: 1/1;
 }
