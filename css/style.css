@@ -199,6 +199,34 @@ a {
     color: var(--dark-100);
 }
 
+ul {
+    padding: 1rem;
+}
+
+li {
+    color: var(--primary-600);
+    font-size: 1.2rem;
+    padding: .25rem 0;
+    text-align: justify;
+}
+
+.category {
+    color: var(--primary-600);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+li li {
+    list-style: disc;
+}
+
+.list {
+    margin: 0 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .main-container {
     margin-top: 8rem;
 }
@@ -207,6 +235,26 @@ a {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.white {
+    color: var(--primary-600);
+}
+
+.vflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.xl-box {
+    margin: 0 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-400);
+    border-radius: 1rem;
 }
 
 .SVPad {
@@ -226,6 +274,11 @@ a {
     margin: 0 2rem;
     border-radius: 1rem;
     background-color: var(--primary-400);
+}
+
+a:hover{
+    text-decoration: underline;
+    
 }
 
 @media (max-width: 1130px) {
@@ -262,25 +315,93 @@ a {
 
 .flex-actions {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 2rem;
-    flex-wrap: wrap;
+    margin: 0 2rem;
     padding-bottom: 1rem;
 }
 
-.box-action {
+@media (max-width: 900px) {
+    .flex-actions {
+        flex-wrap: wrap;
+    }
+}
+
+.btn-quiz {
+    padding: 1rem;
+    border-radius: 1rem;
+    border-color: var(--primary-100);
     background-color: var(--primary-300);
-    min-width: 400px;
-    aspect-ratio: 1/1;
+    color: var(--primary-600);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.wrap-collapsible {
+    margin-bottom: 1.2rem 0;
+    width: 100%;
+}
+  
+input[type='checkbox'] {
+    display: none;
+}
+
+.lbl-toggle {
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 1rem;
+
+    color: var(--primary-200);
+    background: var(--primary-400);
+
+    cursor: pointer;
+
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+    color: var(--primary-600)
+}
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+    background: var(--primary-400);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
 }
 
 :root {
     --cha-header-height: 54px;
 
     /* light theme colors */
-    --color-primary: hsl(250, 84%, 54%);
-    --color-bg: hsl(0, 0%, 100%);
+    --color-primary: hsl(0, 0%, 32%);
+    --color-bg: #718355;
     --color-contrast-medium: hsl(225, 4%, 47%);
     --color-contrast-high: hsl(230, 7%, 23%);
     --color-contrast-higher: hsl(230, 13%, 9%);
@@ -334,8 +455,7 @@ a {
 
 .cha-header__logo {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 100px;
 }
 
 .cha-header__nav {

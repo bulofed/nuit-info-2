@@ -15,22 +15,14 @@
         <div class="cd-container cd-max-width-lg cd-height-100%">
           <div class="cd-flex cd-justify-between cd-items-center cd-height-100%">
             <a href="#0">
-              <svg class="cha-header__logo" viewBox="0 0 40 40">
-                <title>Go to homepage</title>
-                <g>
-                  <circle cx="20" cy="20" r="20" fill="var(--color-primary)"></circle>
-                  <path d="M16.606 10.465L8.355 24.493A1 1 0 0 0 9.217 26h18.251L18.33 10.465a1 1 0 0 0-1.724 0z" fill="#fff" opacity=".7"></path>
-                  <path d="M25.59 16.609L20.468 26h10.316a1 1 0 0 0 .877-1.479l-4.315-7.912a1 1 0 0 0-1.756 0z" fill="#fff" opacity=".7"></path>
-                </g>
-              </svg>
+                  <img class="cha-header__logo" src="./image/logo.svg" alt="logo">
             </a>
             
             <nav class="cha-header__nav js-cha-header__nav">
               <ul class="cha-header__nav-list">
-                <li><a href="#0" class="cha-header__nav-link">Features</a></li>
-                <li><a href="#0" class="cha-header__nav-link">Pricing</a></li>
-                <li><a href="#0" class="cha-header__nav-link">About</a></li>
-                <li><a href="#0" class="cha-header__nav-link">Learn &amp; Support</a></li>
+                <li><a href="Quizz.html" class="cha-header__nav-link">Quizz</a></li>
+                <li><a href="#0" class="cha-header__nav-link">Accueil</a></li>
+                <li><a href="team.html" class="cha-header__nav-link">L'équipe</a></li>
               </ul>
             </nav>
             
@@ -73,17 +65,78 @@
                 <h2>Que Faire ?</h2>
             </div>
             <div class="flex-actions">
-                <div class="box-action"></div>
-                <div class="box-action"></div>
-                <div class="box-action"></div>
-                <div class="box-action"></div>
+                <div class="wrap-collapsible">
+                    <input id="collapsible-1" class="toggle" type="checkbox">
+                    <label for="collapsible-1" class="lbl-toggle">Lutter contre le gaspillage alimentaire</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <ul>
+                                <li>Cuisiner avec les restes</li>
+                                <li>Faire ses courses en vrac</li>
+                                <li>Regarder plus loin que la date de péremption</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collapsible">
+                    <input id="collapsible-2" class="toggle" type="checkbox">
+                    <label for="collapsible-2" class="lbl-toggle">Consommer moins d'eau</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <ul>
+                               <li>Investir dans un lave-vaisselle</li>
+                               <li>Prendre une douche, et non un bain</li>
+                               <li>Boire l’eau du robinet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collapsible">
+                    <input id="collapsible-3" class="toggle" type="checkbox">
+                    <label for="collapsible-3" class="lbl-toggle">Adopter une consommation numérique responsable</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <ul>
+                               <li>Avoir un usage plus sobre des services numériques</li>
+                               <li>Garder ses équipements informatique le plus longtemps possible</li>
+                               <li>S'assurer du bon recyclage des équipements informatiques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collapsible">
+                    <input id="collapsible-4" class="toggle" type="checkbox">
+                    <label for="collapsible-4" class="lbl-toggle">Conduire de manière éco-responsable</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <ul>
+                               <li>Réduire sa vitesse de croisière</li>
+                               <li>Rouler calme, rouler efficace</li>
+                               <li>Vérifiez la pression des pneus tous les 2 mois</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-quiz">
+            <div class="hcenter SVPad">
+                <h2>Quizz</h2>
+            </div>
+            <div class="vflex xl-box">
+                <div class="hcenter">
+                    <p class="white">Testez vos connaissances sur l'écologie</p>
+                </div>
+                <div class="hcenter">
+                    <a href="Quizz.html"><button class="btn-quiz">Commencer</button></a>
+                </div>
             </div>
         </div>
     </div>
     <footer>
         <div class="hcenter">
             <p>© 2023 - Nuit de l'info</p>
-            <a href="">Mentions légales</a>
+            <a href="mention.htm">Mentions légales</a>
         </div>
     </footer>
 </body>
